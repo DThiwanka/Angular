@@ -1,0 +1,110 @@
+/* Base styling for container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 40px auto;
+    gap: 20px;
+}
+
+/* Image container styling */
+.image-container {
+    flex: 1;
+    max-width: 50%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Text container styling */
+.text-container {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.heading {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+/* Call to Action button styling */
+.cta-button {
+    background-color: #075985;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #05436d;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .image-container,
+    .text-container {
+        max-width: 100%;
+    }
+
+    .heading {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .description {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .cta-button {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+/* Add more spacing and customization for larger screens */
+@media (min-width: 1200px) {
+    .container {
+        padding: 60px;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+
+    .description {
+        font-size: 1.2rem;
+    }
+}
