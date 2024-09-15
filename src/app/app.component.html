@@ -1,4 +1,29 @@
-<!DOCTYPE html>
-<app-navigation></app-navigation>
-<app-content></app-content>
-<app-anothercomp></app-anothercomp>
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" routerLink="/">Home</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item ms-3">
+                    <a class="nav-link active" aria-current="page" routerLink="/profile">Profile</a>
+                </li>
+
+                <li class="nav-item ms-3">
+                    <a class="nav-link" routerLink="/aboutus">About Us</a>
+                </li>
+
+                <li class="nav-item ms-3">
+                    <a class="nav-link" routerLink="/table">Table</a>
+                </li>
+
+                <li class="nav-item ms-3">
+                    <a class="nav-link" routerLink="/form">Form</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<router-outlet></router-outlet>

@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class ContentComponent {
 
+  showstart() {
+    alert('Get Started');
+    console.log('Get Started')
+  }
+
+  showProceed() {
+    alert('Proceeding...!');
+    console.log('Proceeding...!')
+  }
+
 }

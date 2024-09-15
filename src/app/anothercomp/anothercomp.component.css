@@ -1,0 +1,39 @@
+ /* Section Styling */
+ .about-section {
+     
+     height: fit-content
+ }
+
+ .about-avatar img {
+     max-width: 85%;
+     transition: transform 0.3s ease;
+ }
+
+ .about-avatar img:hover {
+     transform: scale(1.05);
+ }
+
+ /* Count Styling */
+ .count-data h1 {
+     color: #0d6efd;
+     font-size: 48px;
+ }
+
+ .count-data p {
+     color: #6c757d;
+     margin-top: 10px;
+     font-size: 18px;
+ }
+
+ /* Text Styling */
+ .dark-color {
+     color: #333;
+ }
+
+ .theme-color {
+     color: #0d6efd;
+ }
+
+ .go-to {
+     padding-left: 1rem;
+ }

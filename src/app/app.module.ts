@@ -6,6 +6,10 @@ import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { ContentComponent } from './content/content.component';
 import { AnothercompComponent } from './anothercomp/anothercomp.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { FormComponent } from './form/form.component';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { TableComponent } from './table/table.component';
 
 @NgModule({
   declarations: [
@@ -13,11 +17,16 @@ import { AnothercompComponent } from './anothercomp/anothercomp.component';
     MainComponent,
     NavigationComponent,
     ContentComponent,
-    AnothercompComponent
+    AnothercompComponent,
+    AboutusComponent,
+    FormComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideClientHydration()
