@@ -1,31 +1,23 @@
-<nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" routerLink="/">Home</a>
+<mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu ico      n">
+        <mat-icon routerLink="/">home</mat-icon>
+    </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item ms-3">
-                    <a class="nav-link active" aria-current="page" routerLink="/profile">Profile</a>
-                </li>
+    <span class="example-spacer"></span>
 
-                <li class="nav-item ms-3">
-                    <a class="nav-link" routerLink="/aboutus">About Us</a>
-                    
-                </li>
-
-                <li class="nav-item ms-3">
-                    <a class="nav-link" routerLink="/table">Table</a>
-                </li>
-
-                <li class="nav-item ms-3">
-                    <a class="nav-link" routerLink="/form">Form</a>
-                </li>
-            </ul>
-        </div>
+    <div style="display: flex; gap: 10px;">
+        <button mat-raised-button routerLink="/profile">Profile</button>
+        <button mat-raised-button routerLink="/aboutus">About Us</button>
+        <button mat-raised-button routerLink="/table">Table</button>
+        <button mat-raised-button routerLink="/form">Form</button>
+        <button mat-raised-button routerLink="/material">MaterialUI</button>
     </div>
-</nav>
+
+
+</mat-toolbar>
+
+
+
+
+
 <router-outlet></router-outlet>

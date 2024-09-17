@@ -6,6 +6,8 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { AnothercompComponent } from './anothercomp/anothercomp.component';
 import { FormComponent } from './form/form.component';
 import { TableComponent } from './table/table.component';
+import { MatcompComponent } from './matcomp/matcomp.component';
+
 
 const routes: Routes = [
 
@@ -13,7 +15,8 @@ const routes: Routes = [
   { path: 'profile', component: AnothercompComponent },
   { path: 'aboutus', component: AboutusComponent },
   { path: 'form', component: FormComponent },
-  { path: 'table', component: TableComponent }
+  { path: 'table', component: TableComponent },
+  { path: 'material', component: MatcompComponent }
 
 ];
 

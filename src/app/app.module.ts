@@ -8,11 +8,15 @@ import { ContentComponent } from './content/content.component';
 import { AnothercompComponent } from './anothercomp/anothercomp.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { FormComponent } from './form/form.component';
-import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TableComponent } from './table/table.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatcompComponent } from './matcomp/matcomp.component';
+import { MatButtonModule, MatIconButton } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 
 @NgModule({
@@ -25,6 +29,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     AboutusComponent,
     FormComponent,
     TableComponent,
+    MatcompComponent,
   ],
 
   imports: [
@@ -33,7 +38,11 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatButtonModule,
+    MatIconButton,
+    MatIconModule,
+    MatToolbarModule
   ],
 
   providers: [
