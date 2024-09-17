@@ -10,6 +10,10 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { FormComponent } from './form/form.component';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { TableComponent } from './table/table.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+
 
 @NgModule({
   declarations: [
@@ -20,16 +24,21 @@ import { TableComponent } from './table/table.component';
     AnothercompComponent,
     AboutusComponent,
     FormComponent,
-    TableComponent
+    TableComponent,
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatSlideToggleModule
   ],
+
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })
