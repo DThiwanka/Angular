@@ -17,6 +17,10 @@ import { MatcompComponent } from './matcomp/matcomp.component';
 import { MatButtonModule, MatIconButton } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 
 @NgModule({
@@ -30,6 +34,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     FormComponent,
     TableComponent,
     MatcompComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
 
   imports: [
@@ -42,8 +48,11 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatButtonModule,
     MatIconButton,
     MatIconModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
+  
 
   providers: [
     provideClientHydration(),
